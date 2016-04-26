@@ -1,0 +1,43 @@
+<link rel="stylesheet" type="text/css" href="/new/employees/View/employees.css">
+<div ng-include src="'put.html'"></div>
+
+<div class="jumbotron emp" > 
+	<h4 class="top-head">Employee List</h4>
+		<!-- Search:<input class="search" ng-model="forsearch" type="text"> -->
+		 <input class="form-control" ng-model="forsearch" type="text" placeholder="Search.." style="width:18%;">
+	<!--This is for create employee modal-->
+	<button ng-click="createModal('md')" class="btn btn-default pull-right" style="margin-top:-32px;"> <i class="fa fa-user-plus"></i></button>
+		<div class="well">
+			<div class="row">
+				<div class="col-md-12">
+					<table class="table table-bordered">
+						<tr>
+							<th><a href="" ng-click="forsort='Name';reverse=!reverse">Name</a></th>
+							<th><a href="" ng-click="forsort='Designation';reverse=!reverse">Designation</a></th>
+							<th><a href="" ng-click="forsort='Contact';reverse=!reverse">Contact</a></th>
+							<th><a href="" ng-click="forsort='Email';reverse=!reverse">Email</a></th>
+							<th><a href="" ng-click="forsort='Address';reverse=!reverse">Address</a></th>
+							<th><a href="" >Options</a></th>
+						</tr>
+						<tr class="animate-repeat" ng-repeat="employee in editableEmployees | filter:forsearch | orderBy:forsort:reverse">
+							<td><span ng-bind="employee.Name"></span></td>
+							<td><span ng-bind="employee.Designation"></td>
+							<td><span ng-bind="employee.Contact"></td>
+							<td><span ng-bind="employee.Email"></td>
+							<td><span ng-bind="employee.Address"></td>
+							<td>
+								<a href="" ng-click="watchModal('lg', employee)" class="glyphicon glyphicon-eye-open"></a>
+								<a href="" ng-click="updateModal('md', employee)" class="glyphicon glyphicon-pencil"></a>
+								<span><a href="" ng-click="remove('md',employee)" class="glyphicon glyphicon-trash"></a></span>
+							</td>
+
+						</tr>
+					</table>
+				</div>
+				<!-- <div class="col-md-4">
+				</div> -->
+			</div>
+		<!-- </div> -->
+	</div>
+
+</div>

@@ -1,0 +1,8 @@
+/* input .ng-invalid .ng-dirty{
+ 	border:1px solid red;
+ }*/
+ .emp-profile {
+        height:250px;
+        width: 250px;
+        border: 1px solid black;
+ }

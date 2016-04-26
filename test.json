@@ -1,0 +1,14 @@
+[
+{"Name": "Pawan Bhandari", "Designation": "Front-end Developer", "Contact":"0424882307", "Email":"pawan@gmail.com", "Address":"Campsie"},
+{"Name": "Zaw Htut", "Designation": "Back-end Developer", "Contact":"0426596234", "Email":"zaw@gmail.com", "Address":"Wynyard"},
+{"Name": "John Terry", "Designation": "Midfield", "Contact":"0456792754", "Email":"john@gmail.com", "Address":"United Kingdom"},
+{"Name": "Lionel Messi", "Designation": "Forward", "Contact":"0547991235", "Email":"lionel@gmail.com", "Address":"Barcelona"},
+{"Name": "Thierry Henry", "Designation": "Striker", "Contact":"0523146275","Email":"henry@gmail.com", "Address":"Brasil"},
+{"Name": "Kyrie Irving", "Designation": "Point Guard", "Contact":"0414123412", "Email":"kyrie@gmail.com", "Address":"Cavaliers"},
+{"Name": "Stephan Curry", "Designation": "Point Guard", "Contact":"0234523142", "Email":"stephan@gmail.com", "Address":"Warriors"},
+{"Name": "Kevin Durrant", "Designation": "Shooting Guard", "Contact":"0575942351", "Email":"kevin@gmail.com", "Address":"Cairo"},
+{"Name": "Derrick Rose", "Designation": "Shooting Guard", "Contact":"0423516575", "Email":"derrick@gmail.com", "Address":"Madrid"},
+{"Name": "Ray Allen", "Designation": "Point Guard", "Contact":"0421512412", "Email":"ray@gmail.com", "Address":"Buenos Aires"},
+{"Name": "Philipp Laufenberg", "Designation": "Product Manager", "Contact":"0466246122", "Email":"phil@gmail.com", "Address":"Wynyard"},
+{"Name": "Allen Iverson", "Designation": "Point Guard", "Contact":"0245688224", "Email":"allen@gmail.com", "Address":"Canberra"}
+]

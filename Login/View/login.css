@@ -1,0 +1,16 @@
+.login{
+  margin-top: 100px;
+}
+.login-form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+#username {
+  margin-bottom: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+#password {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

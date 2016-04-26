@@ -1,0 +1,55 @@
+<link rel="stylesheet" type="text/css" href="/new/employeeadd/View/changes.css">
+
+<div>
+    <div class="modal-header">
+        <h2 class="modal-title">{{empWatch.Name}}</h2>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-4">
+                <div>
+                    <!-- <div class="glyphicon glyphicon-user emp-profile"></div> -->
+                   <!--  <img ng-src="/New/Pics/{{empWatch.Images}}" alt="no Pic" class="emp-profile" onchange="PreviewImage();"> -->
+
+                   <!-- done late at night -->
+                   <div ng-controller = "myCtrl">
+                       <img id="uploadPreview" class="emp-profile" ng-src="/New/Pics/{{empWatch.Images}}"/>
+                       <div><p><strong>{{empWatch.Designation}}</strong></p></div>
+                        <input id="uploadImage" type="file" name="myPhoto" onchange="PreviewImage();" file-model = "myFile" /><br>
+                        <!--  <button class="btn btn-default" ng-click = "uploadFile(empWatch.Name)">upload me</button> -->
+                    </div>
+
+                    
+                    <!-- <div><p><strong>{{empWatch.Designation}}</strong></p></div> -->
+                   
+                    <!-- <button class="btn btn-default" ng-disabled="true">Upload/Change Picture</button> -->
+
+                    <!-- File upload -->
+                  <!--   <div ng-controller = "myCtrl">
+                        <input type = "file" file-model = "myFile"/><br>
+                        <button ng-click = "uploadFile(empWatch.Name)">upload me</button>
+                    </div> -->
+
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-12">
+                       <h4>A bit about me..</h4>                         
+                       <p>{{empWatch.Comments}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-footer" ng-controller="myCtrl">
+         
+        <button class="btn btn-primary" type="button" ng-click="$parent.ok();uploadFile(empWatch.Name)">OK</button>
+        <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+    </div>
+    <div ng-show="error" class="text-danger">
+        <strong ng-bind="error"></strong>
+    </div>
+
+</div>

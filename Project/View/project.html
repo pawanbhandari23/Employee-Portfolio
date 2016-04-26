@@ -1,0 +1,38 @@
+<link rel="stylesheet" type="text/css" href="/new/employees/View/employees.css">
+<div ng-include src="'put.html'"></div>
+
+<div class="jumbotron emp" ng-controller="ProjectController"> 
+	<h4 class="top-head">Project List</h4>
+	<!-- <div class= "container"> -->
+		<input class="form-control" ng-model="forsearch" type="text" placeholder="Search.." style="width:18%;">
+	<!-- </div> -->
+	<button ng-click="createModal('md')" class="btn btn-default glyphicon glyphicon-file pull-right" style="margin-top:-28px;"></button>
+	<!-- <div class="container content-display"> -->
+		<div class="well">
+			<div class="row">
+				<div class="col-md-12">
+					<table class="table table-bordered">
+						<tr>
+							<!-- <th><a href="" ng-click="forsort='id';reverse=!reverse">Project Number</a></th> -->
+							<th><a href="" ng-click="forsort='projectName';reverse=!reverse">Project Name</a></th>
+							<th><a href="" ng-click="forsort='client';reverse=!reverse">Client</a></th>
+							<th><a href="" ng-click="forsort='startdate';reverse=!reverse">Start Date</a></th>
+							<th><a href="" ng-click="forsort='status';reverse=!reverse">Status</a></th>
+							<th><a href="" >Options</a></th>
+						</tr>
+						<tr class="animate-repeat" ng-repeat="prj in editableProjects | filter:forsearch | orderBy:forsort:reverse">
+							<!-- <td><span ng-bind="prj.id"></span></td> -->
+							<td><span ng-bind="prj.projectName"></td>
+							<td><span ng-bind="prj.client"></td>
+							<td><span ng-bind="prj.startdate"></td>
+							<td><span ng-bind="prj.status"></td>
+							<td><a href="" ng-click="$parent.updateModal('md', prj)" class="glyphicon glyphicon-pencil"></a>
+								<span><a href="" ng-click="remove('md',prj)" class="glyphicon glyphicon-trash"></a></span>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+	</div>
+
+</div>

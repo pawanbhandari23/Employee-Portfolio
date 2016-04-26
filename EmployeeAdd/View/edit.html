@@ -1,0 +1,54 @@
+<link rel="stylesheet" type="text/css" href="/new/employeeadd/View/changes.css">
+<div>
+    <div class="modal-header">
+        <h2 class="modal-title">Update Details: {{emp.Name}}</h2>
+    </div>
+    <div class="modal-body">
+        <form name="updateEmp">
+            <fieldset>
+                <div class="form-group">
+                    <label class="control-label" for="Name">Name</label>
+                    <div class="controls">
+                        <input type="text" ng-model="emp.Name" id="Name" class="form-control" required>
+                    </div>
+                </div>    
+                <div class="form-group">
+                    <label class="control-label" for="Designation">Designation</label>
+                    <div class="controls">
+                        <input type="text" ng-model="emp.Designation" id="Designation" class="form-control">
+                    </div>
+                </div> 
+                 <div class="form-group">
+                    <label class="control-label" for="Contact">Contact</label>
+                    <div class="controls">
+                        <input type="text" ng-model="emp.Contact" id="Contact" class="form-control">
+                    </div>
+                </div>
+                 <div class="form-group">
+                    <label class="control-label" for="Email">Email</label>
+                    <div class="controls">
+                        <input type="email" ng-model="emp.Email" id="Email" class="form-control">
+                    </div>
+                 </div>
+                <div class="form-group">
+                    <label class="control-label" for="Address">Address</label>
+                    <div class="controls">
+                        <input type="text" ng-model="emp.Address" id="Address" class="form-control">
+                    </div>
+                </div>                
+                <div class="modal-footer">                	
+                     <!-- <input type="submit" value="update" class="btn btn-default pull-left"> -->
+                    <button class="btn btn-primary" type="button" ng-click="ok()" ng-disabled="updateEmp.$invalid">OK</button>
+                   <!-- <div shadow="data">
+    <input ng-model="data">
+    <button ng-click="commit()">save</button>
+  </div> -->
+                    <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+                </div>
+                <div ng-show="error" class="text-danger">
+                    <strong ng-bind="error"></strong>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div> -->
